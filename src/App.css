@@ -1,38 +1,318 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+
+  font-family: Georgia, serif;
+}
+
+.about-page{
+  display: flex;
+  height: 400px;
+}
+.about-page h1{
+  margin-top: 20px;
+}
+.about-page p{
+  margin-top: 30px;
+  font-size: 18px;
+}
+.about-page img{
+  margin-top:30px ;
+  height: 300px;
+  width: 500px;
+}
+@media(max-width:768px){
+  .about-page img{
+    width: 100%;
+  }
+.about-page{
+  display: block;
+  flex-direction: row-reverse;
+  margin-bottom:300px ;
+}
+.about-page p{
+  margin:0px 20px ;
+}
+.about-page h1{
+  text-align: center;
+}
+.service-sec .card-text {
+  max-height: 100px; /* Adjust as needed */
+  overflow: hidden;
+  transition: max-height 0.3s ease; /* Define the transition */
+}
+
+.card-text.expanded {
+  max-height: none; /* Display all content when expanded */
+}
+
+.service-sec .card{
+  height: 400px;
+  margin: auto;
+  padding: 0;
+
+}
+
+
+ .product-sec .card{
+  margin: auto;
+  margin-bottom:10px ;
+  padding: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+}
+.service-sec {
+  margin-top: 30px; /* Margin for the top */
+  margin-right: auto; /* Margin auto for right */
+  margin-left: auto; /* Margin auto for left */
+}
+.service-sec h1{
+  
+  text-align: center;
+}
+.service-sec .card{
+
+
+  height: 400px;
+  margin-bottom:10px ;
+  padding: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+.service-sec .card:hover {
+  transform: translateY(-5px); /* Apply a vertical translation on hover */
+  
+}
+
+.service-sec .card img{
+  height: 150px;
+
+}
+.service-sec button{
+  background-color: green;
+  color: White;
+  border-radius: 10px;
+}
+.brand {
+  height: 200px; /* Adjust the height as needed */
+  width: 100%; /* Make it full-width */
+  background-size: cover; /* Ensure the background image covers the container */
+  background-position: center; /* Center the background image */
+  position: relative; /* Needed for absolute positioning of the text overlay */
+  margin: 20px 0;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 600;
+  transform: translate(-50%, -50%);
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.product-sec .row{
+  margin: auto;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .product-sec h1{
+    align-items: center;
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .product-sec .card{
+   
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-bottom:10px ;
+    padding: 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
   }
-}
+
+  .product-sec .card:hover {
+    transform: translateY(-5px); /* Apply a vertical translation on hover */
+    
+  }
+  .product-sec{
+    margin-bottom:30px ;
+  }
+
+  
+  .product-icon {
+    font-size: 48px; /* Adjust the size as needed */
+    color: green; /* Change the color as needed */
+  }
+  .footer{
+    padding: 0%;
+  }
+  .footer-section {
+   
+    background-image: url('https://t3.ftcdn.net/jpg/06/31/70/38/240_F_631703822_jQ1kVasahfWBOgzcsACYrYkIolptfeoW.jpg');
+    background-size: cover; /* This property ensures the image covers the entire background */
+    background-position: center; 
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0%;
+    opacity: 0.8;
+
+
+  }
+  .footer-cta {
+    border-bottom: 1px solid #373636;
+  }
+  .single-cta i {
+    color: #ff5e14;
+    font-size: 30px;
+    float: left;
+    margin-top: 8px;
+  }
+  .cta-text {
+    padding-left: 15px;
+    display: inline-block;
+  }
+  .cta-text h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  .cta-text span {
+    color: White;
+    font-size: 15px;
+  }
+  .footer-content {
+    position: relative;
+    z-index: 2;
+  }
+  .footer-pattern img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 330px;
+    background-size: cover;
+    background-position: 100% 100%;
+  }
+  .footer-logo {
+    margin-bottom: 30px;
+  }
+  .footer-logo img {
+      max-width: 200px;
+  }
+  .footer-text p {
+    margin-bottom: 14px;
+    font-size: 16px;
+        color: White;
+    line-height: 28px;
+  }
+  .footer-social-icon span {
+    color: White;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+  }
+  .footer-social-icon a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+  }
+  .footer-social-icon i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+  }
+  .facebook-bg{
+    background: #3B5998;
+  }
+  .twitter-bg{
+    background: #55ACEE;
+  }
+  .google-bg{
+    background: #DD4B39;
+  }
+  .footer-widget-heading h3 {
+    color:White;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .footer-widget-heading h3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 2px;
+    width: 50px;
+    background:green;
+  }
+  .footer-widget ul li {
+    display: inline-block;
+  
+    width: 50%;
+    margin-bottom: 12px;
+  }
+  .footer-widget ul li a:hover{
+    color: black;
+  }
+  .footer-widget ul li a {
+    color: White;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  .subscribe-form {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe-form input {
+    width: 100%;
+    padding: 14px 28px;
+    background: green;
+    border: 1px solid White;
+    color: White;
+  }
+  .subscribe-form button {
+      position: absolute;
+      right: 0;
+      background: white;
+      padding: 13px 20px;
+      border: 1px solid green;
+      top: 0;
+  }
+  .subscribe-form button i {
+    color:White;
+    font-size: 22px;
+    transform: rotate(-6deg);
+  }
+ 
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .footer-menu li:hover a{
+    color: #ff5e14;
+  }
+  .footer-menu li a {
+    font-size: 14px;
+    color: White;
+  }
+  
+  .footer-widget-heading ul li a {
+    text-decoration: none;
+  }
+  .home img{
+    height: 500px;
+  }
+
+ 
