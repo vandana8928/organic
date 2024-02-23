@@ -50,34 +50,34 @@ const Buttombar = () => {
                   </div>
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <Link to="#">Home</Link>
                     </li>
                     <li>
-                      <a href="#">about</a>
+                      <Link to="#">about</Link>
                     </li>
                     <li>
-                      <a href="#">services</a>
+                      <Link to="#">services</Link>
                     </li>
                     <li>
-                      <a href="#">portfolio</a>
+                      <Link to="#">portfolio</Link>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <Link to="#">Contact</Link>
                     </li>
                     <li>
-                      <a href="#">About us</a>
+                      <Link to="#">About us</Link>
                     </li>
                     <li>
-                      <a href="#">Our Services</a>
+                      <Link to="#">Our Services</Link>
                     </li>
                     <li>
-                      <a href="#">Expert Team</a>
+                      <Link to="#">Expert Team</Link>
                     </li>
                     <li>
-                      <a href="#">Contact us</a>
+                      <Link to="#">Contact us</Link>
                     </li>
                     <li>
-                      <a href="#">Latest News</a>
+                      <Link to="#">Latest News</Link>
                     </li>
                   </ul>
                 </div>
