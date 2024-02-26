@@ -10,6 +10,7 @@ AOS.init({
   },[])
   return (
     <div className="container-fluid about-page" data-aos="fade-up">
+      <div className="row">
       <div className="col-lg-6"data-aos="fade-right">
         <img
           src="https://kalbis.ac.id/wp-content/uploads/2020/12/contact_image.png"
@@ -31,6 +32,7 @@ AOS.init({
           consumerism.
         </p>
       </div>
+    </div>
     </div>
   );
 };

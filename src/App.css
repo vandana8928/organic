@@ -6,6 +6,8 @@
 
 body{
 
+    overflow-x: hidden;
+  
   font-family: Georgia, serif;
 }
 
@@ -25,15 +27,17 @@ body{
   height: 300px;
   width: 500px;
 }
-@media(max-width:768px){
+
+
+ @media(max-width:768px){
+
   .about-page img{
     width: 100%;
   }
-.about-page{
-  display: block;
-  flex-direction: row-reverse;
-  margin-bottom:300px ;
-}
+  .about-page{
+ 
+    margin-bottom:300px ;
+  }
 .about-page p{
   margin:0px 20px ;
 }
@@ -41,13 +45,13 @@ body{
   text-align: center;
 }
 .service-sec .card-text {
-  max-height: 100px; /* Adjust as needed */
+  max-height: 100px; 
   overflow: hidden;
-  transition: max-height 0.3s ease; /* Define the transition */
+  transition: max-height 0.3s ease; 
 }
 
 .card-text.expanded {
-  max-height: none; /* Display all content when expanded */
+  max-height: none; 
 }
 
 .service-sec .card{
@@ -66,7 +70,10 @@ body{
 
 }
 
+.contact iframe{
+width: 100%;
 }
+} 
 .service-sec {
   margin-top: 30px; /* Margin for the top */
   margin-right: auto; /* Margin auto for right */
@@ -318,3 +325,4 @@ body{
  .Contact{
   margin-bottom: 30px;
  }
+ 

@@ -7,6 +7,7 @@ import Product from "./component/Product";
 import MainHome from "./MainHome";
 import Topbar from "./component/Topbar";
 import Buttombar from "./component/Buttombar";
+import Contact from "./component/Contact";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/Service" element={<Service />} />
           <Route path="/Brand" element={<Brand />} />
           <Route path="/Product" element={<Product />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
         <Buttombar />
       </BrowserRouter>
